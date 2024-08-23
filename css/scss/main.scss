@@ -302,6 +302,9 @@ a {
                 color: $theme2;
             }
         }
+        .show > .nav-link {
+            color: $theme2!important; // This will apply to .nav-link when it is a child of an element with the .show class
+        }
     }
 
     .navbar-toggler {

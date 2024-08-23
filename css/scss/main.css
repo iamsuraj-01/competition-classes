@@ -271,6 +271,9 @@ a {
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
   color: #220fc3;
 }
+.navbar .navbar-nav .show > .nav-link {
+  color: #220fc3 !important;
+}
 .navbar .navbar-toggler {
   color: #220fc3 !important;
   border-color: #220fc3 !important;
