@@ -634,6 +634,9 @@ footer .link-animated a:hover {
   .contact h4 {
     font-size: 0.9rem !important;
   }
+  .responsive-content {
+    justify-content: flex-start !important;
+  }
 }
 @media (min-width: 768px) {
   .footer-about {
