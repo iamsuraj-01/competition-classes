@@ -134,6 +134,47 @@ a {
     z-index: 99;
 }
 
+.highlight-button {
+    position: fixed;
+    bottom: 10px; // You can adjust this
+    right: 15px; // You can adjust this
+    z-index: 1000; // Ensure it's above other elements
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px; // Space between icon and text
+      transition: all 0.3s ease;
+      border: 3px solid $theme;
+      font-size: 12px;
+
+      &:hover {
+        transform: scale(1.1); // Button enlarges on hover
+      }
+
+      .arrow-icon {
+        font-size: 12px;
+        margin-right: 5px; // Space between icon and text
+        animation: slide-right 1s infinite alternate ease-in-out;
+      }
+    }
+
+    .animated-button {
+      animation: pulse-animation 2s infinite;
+    }
+
+    @keyframes slide-right {
+      from { transform: translateX(0); }
+      to { transform: translateX(5px); } // Moves right
+    }
+
+    @keyframes pulse-animation {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+}
+
 /* Spinner */
 .spinner {
     width: 40px;
