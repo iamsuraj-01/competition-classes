@@ -30,22 +30,54 @@
     </head>
 
     <body>
-
-		<!-- Modal Form
+		<!-- Modal Start -->
 		<div class="modal fade user-form wow slideInDown" id="eligibilityModal" tabindex="-1" aria-labelledby="eligibilityModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-md">
+			<div class="modal-dialog modal-xl"> <!-- Changed to modal-xl for more space -->
 				<div class="modal-content text-white">
 					<div class="modal-header bg-theme-2">
-					<h5 class="modal-title" id="eligibilityModalLabel">Check Your Eligibility</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<h5 class="modal-title" id="eligibilityModalLabel">Our Results</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body rounded h-100 d-flex align-items-center p-1">
-						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6bT9xTL23huBX_Us8D-gXgRylGS0uykXMe07WwWTGtF-JUw/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.1s">
+									<div class="card position-relative">
+										<img src="img/result-1.jpeg" class="card-img" alt="..."></img>
+										<div class="card-overlay d-flex justify-content-center align-items-center text-white">
+										</div>
+									</div>
+								</div>
+				
+								<div class="col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.1s">
+									<div class="card position-relative">
+										<img src="img/result-2.jpeg" class="card-img" alt="..."></img>
+										<div class="card-overlay d-flex justify-content-center align-items-center text-white">
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.1s">
+									<div class="card position-relative">
+										<img src="img/result-3.jpeg" class="card-img" alt="..."></img>
+										<div class="card-overlay d-flex justify-content-center align-items-center text-white">
+										</div>
+									</div>
+								</div>
+				
+								<div class="col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.1s">
+									<div class="card position-relative">
+										<img src="img/result-4.jpeg" class="card-img" alt="..."></img>
+										<div class="card-overlay d-flex justify-content-center align-items-center text-white">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		 -->
+		<!-- Modal End -->
 	
 		<!-- Spinner Start -->
 		<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -299,21 +331,21 @@
 						</div>
 						</div>
 					</div>
-				<div class="col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.1s">
-					<div class="card position-relative">
-					<img src="img/result-3.jpeg" class="card-img" alt="..."></img>
-					<div class="card-overlay d-flex justify-content-center align-items-center text-white">
+					<div class="col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.1s">
+						<div class="card position-relative">
+						<img src="img/result-3.jpeg" class="card-img" alt="..."></img>
+						<div class="card-overlay d-flex justify-content-center align-items-center text-white">
+						</div>
+						</div>
 					</div>
-					</div>
-				</div>
 
-				<div class="col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.1s">
-					<div class="card position-relative">
-					<img src="img/result-4.jpeg" class="card-img" alt="..."></img>
-					<div class="card-overlay d-flex justify-content-center align-items-center text-white">
+					<div class="col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.1s">
+						<div class="card position-relative">
+						<img src="img/result-4.jpeg" class="card-img" alt="..."></img>
+						<div class="card-overlay d-flex justify-content-center align-items-center text-white">
+						</div>
+						</div>
 					</div>
-					</div>
-				</div>
 				</div>
 			</div>
 		</section>
@@ -394,7 +426,7 @@
 		<!-- Service End -->
 	
 		<!-- Team Start -->
-		<section class="container-fluid py-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+		<section class="container-fluid py-5 mb-5 bg-light wow fadeInUp" data-wow-delay="0.1s">
 			<div class="container py-5">
 				<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
 					<h2 class="fw-bold text-theme-2 text-uppercase">Our Team</h2>
@@ -486,7 +518,7 @@
 		<!-- Team End -->
 
 		<!-- Gallery Start -->
-		<section class="container-fluid py-5 mb-5 bg-light gallery wow fadeInUp" data-wow-delay="0.3s">
+		<section class="container-fluid py-5 mb-5 gallery wow fadeInUp" data-wow-delay="0.3s">
 			
 				<div class="section-title text-center position-relative pb-3 mt-5 mb-5 mx-auto" style="max-width: 600px;">
 					<h2 class="fw-bold text-theme-2 text-uppercase">Gallery</h2>
@@ -542,66 +574,6 @@
 		
 		</section>
 		<!-- Gallery End -->
-
-		<!-- Facts Counter Start 
-		<section class="container-fluid counter py-5 pt-lg-5">
-			<div class="py-5 pt-lg-5">
-				<div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-				<h2 class="fw-bold text-theme-2 text-uppercase">Get Expert Guidance</h2>
-				<p class="mb-4">
-					We proudly showcase a proven track record of excellence and success, consistently delivering outstanding results and exceeding expectations.
-				</p>
-				</div>
-				<div class="row gx-0">
-				<div class="col-lg-3 wow zoomIn" data-wow-delay="0.1s">
-					<div class="bg-theme-2 shadow d-flex align-items-center justify-content-center responsive-content p-4" style="height: 150px;">
-					<div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" 
-						style="width: 60px; height: 60px;">
-						<i class="fas fa-users"></i>
-					</div>
-					<div class="ps-4">
-						<h5 class="text-white mb-0">Participants</h5>
-						<h1 class="text-white mb-0" data-toggle="counter-up">50000</h1>
-					</div>
-					</div>
-				</div>
-				<div class="col-lg-3 wow zoomIn" data-wow-delay="0.3s">
-					<div class="bg-theme shadow d-flex align-items-center justify-content-center responsive-content p-4" style="height: 150px;">
-					<div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-						<i class="fas fa-user text-dark"></i>
-					</div>
-					<div class="ps-4">
-						<h5 class="text-theme-2 mb-0">Batches</h5>
-						<h1 class="text-dark mb-0" data-toggle="counter-up">3000</h1>
-					</div>
-					</div>
-				</div>
-				<div class="col-lg-3 wow zoomIn" data-wow-delay="0.6s">
-					<div class="bg-theme-2 shadow d-flex align-items-center justify-content-center responsive-content p-4" style="height: 150px;">
-					<div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-						<i class="fas fa-award"></i>
-					</div>
-					<div class="ps-4">
-						<h5 class="text-white mb-0">STUDENT SELECTED</h5>
-						<h1 class="text-white mb-0" data-toggle="counter-up">8000</h1>
-					</div>
-					</div>
-				</div>
-				<div class="col-lg-3 wow zoomIn" data-wow-delay="0.3s">
-					<div class="bg-theme shadow d-flex align-items-center justify-content-center responsive-content p-4" style="height: 150px;">
-					<div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-						<i class="fas fa-award text-dark"></i>
-					</div>
-					<div class="ps-4">
-						<h5 class="text-theme-2 mb-0">Years of Excellence</h5>
-						<h1 class="text-dark mb-0" data-toggle="counter-up">22</h1>
-					</div>
-					</div>
-				</div>
-				</div>
-			</div>
-		</section>
-		-->
 
 		<!-- Footer Start -->
 		<footer class="container-fluid bg-dark text-light wow fadeInUp" data-wow-delay="0.1s">

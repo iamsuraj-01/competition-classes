@@ -49,12 +49,6 @@
             $dropdown.off("mouseenter mouseleave");
         }
     });
-
-    // Facts Counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
     
     // Back To Top Button
     $(window).scroll(function() {
