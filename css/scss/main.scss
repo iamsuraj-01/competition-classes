@@ -481,6 +481,61 @@ footer {
     margin-bottom: 90px;
 }
 
+/* Result */
+.result {
+    .card {
+        border: none;
+        position: relative;
+        overflow: hidden;
+
+        .card-img {
+            transition: transform 0.4s ease-in-out;
+            min-height: 500px;
+        }
+
+        &:hover .card-img {
+            transform: scale(1.1);
+        }
+
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        .card-hover-overlay {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            transition: left 0.4s ease-in-out, opacity 0.4s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            opacity: 0;
+        }
+
+        &:hover .card-overlay {
+            opacity: 0;
+        }
+
+        &:hover .card-hover-overlay {
+            left: 0;
+            opacity: 1;
+        }
+    }
+}
+
 /* Service */
 .service {
     .card {
