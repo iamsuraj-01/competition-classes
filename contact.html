@@ -162,25 +162,40 @@
                 </div>
                 <div class="row g-5">
                     <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                        <form>
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control border-0 bg-light px-4" name="fullName" placeholder="Your Name" style="height: 55px;" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control border-0 bg-light px-4" name="email" placeholder="Your Email" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
+                                    <input type="tel" class="form-control border-0 bg-light px-4" name="phone" placeholder="Phone Number" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
+                                    <textarea class="form-control border-0 bg-light px-4 py-3" name="query" rows="4" placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-theme w-100 py-3" type="submit">Send Message</button>
                                 </div>
                             </div>
                         </form>
+
+						<!-- Thank You Modal -->
+						<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-body text-dark">
+										Thank you for reaching out to us. We appreciate your interest and will get back to you shortly.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-theme" data-bs-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
                     </div>
                     <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                         <iframe class="position-relative rounded w-100 h-100"

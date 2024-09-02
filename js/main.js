@@ -92,5 +92,39 @@
             });
         }
     });
+
+    // Contact Form Submission
+    $(document).ready(function() {
+        $("#contactForm").on("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const fullName = $("input[name='fullName']").val();
+            const email = $("input[name='email']").val();
+            const phone = $("input[name='phone']").val();
+            const query = $("textarea[name='query']").val();
+
+            // Create an array for the message lines
+            const messageLines = [
+                `Information:`,
+                `Name: ${fullName}`,
+                `Email: ${email}`,
+                `Phone: ${phone}`,
+                `Query: ${query}`
+            ];
+
+            // Join the message lines with line breaks
+            const message = messageLines.join('%0D%0A'); // '%0D%0A' is the URL-encoded line break for mailto links
+
+            // Construct mailto link
+            const mailtoLink = `mailto:competitionclasses.edu@gmail.com?subject=Admission Request from ${fullName}&body=${message}`;
+
+            // Open the user's default email client
+            window.location.href = mailtoLink;
+
+            // Show Thank You Modal
+            $("#thankYouModal").modal('show');
+        });
+    });
+
     
 })(jQuery);
